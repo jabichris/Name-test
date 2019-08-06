@@ -1,0 +1,82 @@
+@import './oneStory';
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial;
+	font-size: 17px;
+}
+
+.landing-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+.content {
+	position: fixed;
+	background: rgba(38, 20, 76, .7);
+	color: #f1f1f1;
+	min-width: 100%;
+	min-height: 100%;
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+	.description {
+		font-size: 60px;
+		font-family: 'Courier New', Courier, monospace;
+		width: 60%;
+		float: right;
+	}
+	.btn-left {
+		width: 40%;
+		float: left;
+		margin-top: 150px;
+		ul {
+			list-style: none;
+			line-height: 66px;
+			margin-left: -40px;
+		}
+		li {
+			width: 70%;
+			padding: 10px 50px 10px 50px;
+			a {
+				text-decoration: none;
+				color: #ffffff;
+				&:hover {
+					background-color: black;
+					padding: 10px 50px 10px 10px;
+				}
+			}
+		}
+	}
+}
+.row:before,
+.row:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+.logo {
+	padding: 0px 0px 0px 20px;
+	float: left;
+}
+.btn-menu {
+	margin: 20px 37px 0px 0px;
+	.btn-info {
+		font-size: 20px;
+		font-weight: 900;
+		background: #ff811f;
+		padding: 16px;
+		border-radius: 31px;
+		float: left;
+		float: right;
+		width: 220px;
+		border: 0;
+		cursor: pointer;
+	}
+}

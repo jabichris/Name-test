@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+}
+@mixin Transition($trans) {
+  box-shadow: $trans;
+  color: #fcf1ca;
+}
+@mixin layout($padding, $shadow) {
+  box-shadow: $shadow;
+  transition: all 0.5s ease-in;
+  padding: $padding;
+}
+
+.menu-header {
+	background: teal;
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  #logo {
+    margin: 11px;
+    float: left;
+    height: 54px;
+    width: 65px;
+  }
+.menu-left {
+ul {
+	list-style: none;
+}
+li {
+	float: left;
+  padding: 10px;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      @include Transition( #fcf1ca);
+    }
+  }
+}
+}
+.dropdown {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+  float: right;
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.dropdown-content {
+  display: none;
+  float: right;
+  background-color: teal;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+}
+}
+}
+.menu {
+  a {
+    @include layout(6px, 0px 0px 0px black);
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+    &:hover {
+      @include Transition(0px -2px 2px #fcf1ca);
+    }
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+  }
+  @include layout(16px, 0px 2px 2px #afa8ba);
+  border-bottom: 1px solid;
+  border-color: #fbf8ff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: teal;
+  z-index: 1;
+  &:hover {
+    @include Transition(0px 3px 6px #afa8ba);
+  }
+}

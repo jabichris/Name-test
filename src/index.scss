@@ -1,0 +1,31 @@
+body {
+  background-color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+}
+.view_result {
+  float: left;
+    text-decoration: none;
+    color: teal;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.next_button {
+  margin-left: 250px;
+    background-color: teal;
+    padding: 12px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    color: #ffff;
+}
+
+.question {
+  text-align: left;
+}
+.answers {
+  text-align: left;
+  line-height: 30px;
+}

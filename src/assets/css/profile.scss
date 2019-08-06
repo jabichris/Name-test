@@ -1,0 +1,12 @@
+@import "./oneStory";
+@mixin colors {
+    background-color: #078000;
+    color: white;
+}
+@mixin hoverColors {
+    background-color: #00793E;
+    cursor: pointer;
+}
+body{
+    background-color: teal;
+}

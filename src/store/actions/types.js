@@ -1,0 +1,7 @@
+export const GET_ERRORS = 'GET_ERRORS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const GET_QUESTIONS = 'GET_QUESTIONS';
+export const REMOVE_CURRENT_USER = 'REMOVE_CURRENT_USER';
+export const RESOLVE_QN = 'RESOLVE_QN';
+export const SELECT_ANSWER = 'SELECT_ANSWER';
+export const GO_NEXT = 'GO_NEXT';

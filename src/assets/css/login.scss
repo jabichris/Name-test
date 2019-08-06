@@ -1,0 +1,93 @@
+@mixin layout($padding, $shadow) {
+  box-shadow: $shadow;
+  transition: all 0.5s ease-out;
+  padding: $padding;
+}
+body {
+  background-color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+}
+.container {
+  @include layout(20px, 0 4px 8px 0 rgba(0, 0, 0, 0.38));
+  width: 35%;
+  text-align: center;
+  margin: 8% 25% 0% 30%;
+  background-color: white;
+  border-radius: 5px;
+  img {
+    @include layout(6px, 0px 0px 0px #afa8ba);
+    width: 50px;
+    margin: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  p {
+    color: #404a3c;
+  }
+}
+.input {
+  width: 49%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.right {
+  margin-right: auto;
+  margin-left: auto;
+}
+.left {
+  margin-left: 55px;
+}
+input[type="text"],
+[type="password"],
+[type="email"] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.btn-blue {
+  background-color: teal;
+  color: white;
+  width: 70%;
+}
+
+.btn-blue:hover {
+  background-color: #209b87;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: teal;
+  color: white;
+  width: 70%;
+}
+
+.btn-green:hover {
+  background-color: #209b87;
+  cursor: pointer;
+}
+
+.link {
+  color: #646564;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.link:hover {
+  color: #48494a;
+  text-decoration: underline;
+}

@@ -1,0 +1,107 @@
+@import "./variables";
+.container2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .related {
+    width: 80%;
+  }
+}
+.posts {
+  display: flex;
+  .post {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 32%;
+    background-color: #dadde2;
+    box-shadow: $boxShadow;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    &:hover {
+      box-shadow: $hoverBoxShadow;
+    }
+    img {
+      width: 100%;
+      height: 180px;
+    }
+  }
+  .post-img {
+    width: 100%;
+  }
+  .read {
+    padding: 14px;
+    border-color: black;
+    width: 30%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease-in;
+    &:hover {
+      box-shadow: 0px 3px 6px 4px white;
+      border-color: teal;
+    }
+  }
+}
+
+.comments {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 23%;
+}
+
+.overlap {
+  display: grid;
+  grid-template-areas: "comment";
+}
+
+.typeComment {
+  grid-area: comment;
+  width: 72%;
+  padding: 16px;
+  margin: 2% 0%;
+  font-size: 20px;
+  cursor: text;
+  box-shadow: $boxShadow;
+  z-index: 1;
+}
+
+.writeComment {
+  grid-area: comment;
+  width: 99%;
+  height: 120px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+.commentAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.comment {
+  border: solid;
+  border-radius: 10px;
+  width: 75%;
+  border-color: #4b4a54;
+}
+
+.publish {
+  padding: 13px;
+  background-color: #0066ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.noPublish {
+  padding: 13px;
+  background-color: #7e0000;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}

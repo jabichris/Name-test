@@ -1,0 +1,137 @@
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container2 .related {
+  width: 80%;
+}
+
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.posts .post {
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 32%;
+  background-color: #dadde2;
+  -webkit-box-shadow: 0px 2px 1px 1px #324B4B;
+          box-shadow: 0px 2px 1px 1px #324B4B;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.posts .post:hover {
+  -webkit-box-shadow: 0px 3px 2px 2px #324B4B;
+          box-shadow: 0px 3px 2px 2px #324B4B;
+}
+
+.posts .post img {
+  width: 100%;
+  height: 180px;
+}
+
+.posts .post-img {
+  width: 100%;
+}
+
+.posts .read {
+  padding: 14px;
+  border-color: black;
+  width: 30%;
+  margin-left: 3%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.posts .read:hover {
+  -webkit-box-shadow: 0px 3px 6px 4px white;
+          box-shadow: 0px 3px 6px 4px white;
+  border-color: teal;
+}
+
+.comments {
+  width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 23%;
+}
+
+.overlap {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "comment";
+}
+
+.typeComment {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: comment;
+  width: 72%;
+  padding: 16px;
+  margin: 2% 0%;
+  font-size: 20px;
+  cursor: text;
+  -webkit-box-shadow: 0px 2px 1px 1px #324B4B;
+          box-shadow: 0px 2px 1px 1px #324B4B;
+  z-index: 1;
+}
+
+.writeComment {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: comment;
+  width: 99%;
+  height: 120px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+.commentAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.comment {
+  border: solid;
+  border-radius: 10px;
+  width: 75%;
+  border-color: #4b4a54;
+}
+
+.publish {
+  padding: 13px;
+  background-color: #0066ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.noPublish {
+  padding: 13px;
+  background-color: #7e0000;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=comment.css.map */
